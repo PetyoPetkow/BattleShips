@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shipGame.css">
+    <title>Document</title>
+    <link rel="" href="gameFunctionality.js">
+    <link rel="" href="generateMaps.js">
+
+</head>
+<body>
+    <div class="top">
+        <div class="boatsInformation">Battleships: </div>
+        <div class="battleshipsLeft boatsInformation-m"></div>
+        <div class="boatsInformation">Destroyers: </div>
+        <div class="destroyersLeft boatsInformation-m"></div>
+        <div class="boatsInformation">Submarines: </div>
+        <div class="submarinesLeft boatsInformation-m"></div>
+        <div class="boatsInformation">Patrol boats: </div>
+        <div class="patrolBoatsLeft boatsInformation-m"></div>
+        <div class="boatsInformation">clicks: </div>
+        <div class="numberOfClicks boatsInformation-m"></div>
+
+        <button id="resetBtn" onclick="window.location.reload();">reset</button>
+    </div>
+    <div class="section">
+        <div class="playerField"></div>
+        <div class="enemyField"></div>
+    </div>
+    <div>
+        <h1 class="winOrLose"></h1>
+        <button class="restart">Restart</button>
+    </div>
+</body>
+<script src="gameFunctionality.js"></script>
+<script src="generateMaps.js"></script>
+</html>

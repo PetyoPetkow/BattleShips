@@ -1,0 +1,183 @@
+body{
+    margin:0px;
+    background-image: url("images/fe1e919b8cee9ea882216ef4e4f46743.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 0px;
+}
+
+#resetBtn{
+    float: right;
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+#resetBtn:hover{
+    background-color: rgb(110, 110, 110);
+    color: white;
+}
+
+
+.section{
+    padding: 5%;
+    padding-top: 0%; 
+}
+
+.playerField{
+    width: max-content;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    margin-top: 55px;
+    border: 10px solid transparent;
+    padding: 1px;
+    border-image: url("images/ironTexture2.jpg") 30% stretch; 
+    border-image-slice: 20 25;
+}
+
+.enemyField{
+    width: max-content;
+    float: right;
+    background-color: rgb(255, 255, 255);
+    margin-top: 55px;
+    border: 10px solid transparent;
+    padding: 1px;
+    border-image: url("images/ironTexture2.jpg") 30% stretch; 
+    border-image-slice: 20 25;
+}
+
+@media (max-width: 1000px) {
+    .section{
+        margin-left:auto;
+        margin-right:auto;
+        height:auto; 
+        width:auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .playerField {
+        margin-left:auto;
+        margin-right:auto;
+        float:left; 
+    }
+    .enemyField{
+        margin-left:auto;
+        margin-right:auto;
+        float:left; 
+        clear: left;
+    }
+}
+
+.top{
+    min-height: 60px;
+    background-image: url("images/ironTexture2.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    border-bottom: 2px solid gray;
+    border-radius: 20px;
+    padding: 1%;
+    contain:content;
+}
+
+.battleships{
+    background-color: blue;
+}
+.submarines{
+    background-color: brown;
+}
+.destroyers{
+    background-color: blueviolet;
+}
+.patrolBoats{
+    background-color: aquamarine;
+}
+
+.winOrLose{
+    position: absolute;
+    top:20%;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 100px;
+    color:rgb(79, 90, 243);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aliceblue;
+}
+
+.restart{
+    display: none;
+    position: absolute;
+    bottom:20%;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 200px;
+    color:rgb(79, 90, 243);
+}
+
+.box{  
+    margin:0px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align:bottom;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px; 
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 30px;
+    background-image: url("images/waterTexture.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+
+button.box{
+    border: 1px solid black;
+    width: 42px!important;
+    height: 42px!important;
+}
+
+button.box:hover {
+    transform: scale(1.05);
+    transition:transform 0.30s ease-in-out;
+}
+
+.shot{
+    background-image: url("images/explosion1.png"), url("images/ironTexture2.jpg");
+    background-position: center, left top;
+    background-size: 40pt, cover;
+    background-repeat: no-repeat, repeat;
+    font-size: 0px;
+}
+
+.boatsInformation{
+    color:rgb(255, 255, 255); 
+    font-size: 48px;
+    display: inline;
+    margin-left: 30px;
+}
+
+.boatsInformation-m{
+    color:aliceblue; 
+    font-size: 48px;
+    display: inline;
+    
+}
+
+.playerField .boat{
+    background-image: url("images/ironTexture2.jpg");
+}
